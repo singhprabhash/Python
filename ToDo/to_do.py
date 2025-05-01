@@ -9,6 +9,8 @@ class ToDo:
     print("3. Mark as Done")
     print("4. Delete a Task")
     print("5. Exit")
+
+
   """
   Add tasks to a list.
   """
@@ -16,6 +18,8 @@ class ToDo:
     title = input("Enter a task: ")
     self.tasks.append({"title": title, "done": False})
     print("✅ Task added.")
+
+
   """
   View All the tasks.
   """
@@ -26,6 +30,8 @@ class ToDo:
     for idx, task in enumerate(self.tasks):
       status = "✔️" if task["done"] else "❌"
       print(f"{idx}. {task['title']} [{status}]")
+
+
   """
   Mark as done the particular tasks.
   """
@@ -37,6 +43,8 @@ class ToDo:
       print("✅ Task marked as done.")
     else:
       print("❌ Invalid task number.")
+
+
   """
   Delete certaiin task.
   """
