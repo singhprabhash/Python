@@ -9,8 +9,8 @@ class Quiz:
   def readFile(self):
     with open('quizData.json', 'r') as file:
       """
-      json.loads function will extract the data from file and
-      store in data variable.
+      json.load --> Deserialize fp (a .read()-supporting file-like object containing
+      a JSON document) to a Python object.
       """
       self.jsonData = json.load(file)
 
